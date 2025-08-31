@@ -7,21 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+      <header>
         <nav>
             <h1>BeeWay 🐝</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="o-que-e-logistica.html">O que é Logística?</a></li>
-                <li><a href="principais-processos.html">Principais Processos Logísticos</a></li>
-                <li><a href="ferramentas-tecnologias.html">Ferramentas & Tecnologias</a></li>
-                <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="sobre-nos.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu" id="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="o-que-e-logistica.html">O que é Logística?</a></li>
+            <li><a href="principais-processos.html">Logística Integrada</a></li>
+            <li><a href="ferramentas-tecnologias.html">Ferramentas & Tecnologias</a></li>
+            <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-    </header>
+        </header>
+    <main>
 
     <main>
         <section>
@@ -36,7 +42,16 @@
         <p>&copy; 2025 BeeWay. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+        <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+    </script>
+    
 </body>
 </html>
 
