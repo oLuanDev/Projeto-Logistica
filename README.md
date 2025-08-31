@@ -40,7 +40,7 @@ O objetivo é **ensinar conceitos de logística de maneira dinâmica e interativ
 
 ---
 
-[![Acesse o Blog](https://img.shields.io/badge/Acesse%20o%20Blog-🌐-blue)]([https://seudominio.com](https://oluandev.github.io/Projeto-Logistica/index.html))
+[![Acesse o Blog](https://img.shields.io/badge/Acesse%20o%20Blog-🌐-blue)]([https://oluandev.github.io/Projeto-Logistica/index.html])
 
 
 ---
