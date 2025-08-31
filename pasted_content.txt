@@ -1,0 +1,159 @@
+Página Inicial (Home)
+---------------------
+[Seção 1 – Hero]
+Título: BeeWay 🐝
+Slogan: O caminho simples da logística
+Texto: Bem-vindo ao BeeWay! Nosso objetivo é descomplicar a logística, trazendo conteúdos acessíveis e multimodais para todos.
+Imagem: Ilustração de abelha + fluxos logísticos
+Botão: Conheça o Blog
+
+Página Inicial (Home)
+---------------------
+[Seção 1 – Hero]
+Título: BeeWay 🐝
+Slogan: O caminho simples da logística
+Texto: Bem-vindo ao BeeWay! Nosso objetivo é descomplicar a logística, trazendo conteúdos acessíveis e multimodais para todos.
+Imagem: Ilustração de abelha + fluxos logísticos
+Botão: Conheça o Blog
+
+[Seção 2 – Destaques do Blog]
+Título: Últimos Posts
+Lista de posts:
+1. O que é Logística? → Botão “Leia Mais”
+2. Transporte e Distribuição Simplificados → Botão “Leia Mais”
+3. Sustentabilidade na Logística → Botão “Leia Mais”
+Formato: Blocos com imagem + título + resumo + botão
+
+Página: O que é Logística?
+---------------------------
+Título: O que é Logística?
+Texto:
+Logística é planejar, organizar e controlar o caminho que um produto percorre desde a origem até o cliente final. É garantir que a coisa certa chegue no lugar certo, na hora certa, na quantidade certa e na qualidade certa.
+Imagem/Vídeo: Infográfico ou animação explicativa
+Botão: Voltar para Home
+
+Página: Principais Processos Logísticos
+---------------------------------------
+[Título da página]: Principais Processos Logísticos
+
+[Bloco 1 – Suprimentos & Compras]
+Texto: Como as empresas adquirem e armazenam materiais de forma organizada.
+Imagem/Infográfico: Estoque ou compra de insumos
+
+[Bloco 2 – Armazenagem & Estoque]
+Texto: Controle de materiais e organização do espaço físico.
+Imagem/Infográfico: Prateleiras e organização de estoque
+
+[Bloco 3 – Transporte & Distribuição]
+Texto: Como os produtos chegam ao cliente final de forma eficiente.
+Imagem/Infográfico: Caminhões, mapas de rota, fluxogramas
+
+[Bloco 4 – Logística Reversa]
+Texto: Devoluções, trocas e reciclagem de maneira sustentável.
+Imagem/Infográfico: Fluxo de devolução ou reciclagem
+
+Página: Ferramentas & Tecnologias
+---------------------------------
+Título: Ferramentas e Tecnologias
+Texto: Softwares, automação e novas tecnologias que ajudam a tornar a logística mais eficiente.
+Imagem: Dashboard de WMS/TMS, drones, rastreadores
+Botão: Saiba Mais
+
+Página: Sustentabilidade
+------------------------
+Título: Sustentabilidade na Logística
+Texto: Práticas sustentáveis, transporte verde, redução de desperdício e embalagens ecológicas.
+Imagem/Infográfico: Gráficos de impacto ambiental
+
+Página: Blog / Notícias
+-----------------------
+Título: Notícias e Curiosidades
+Texto: Fique por dentro das novidades do setor logístico, tendências e curiosidades do mundo da logística.
+Formato: Lista de posts com miniaturas e resumo
+Botão: Leia Mais
+
+Página: Sobre Nós
+-----------------
+Título: Sobre o BeeWay
+Texto: Somos Luan, Denise e Matheus, o trio BeeWay. Nosso objetivo é tornar o aprendizado de logística simples, divertido e acessível para todos.
+Imagem: Fotos do grupo ou ilustração de abelhas trabalhando em equipe
+
+Página: Contato
+---------------
+Título: Fale Conosco
+Texto: Entre em contato conosco, envie dúvidas ou sugestões.
+Formulário: Nome, E-mail, Mensagem
+Botão: Enviar Mensagem
+Links: Redes sociais do grupo
+Título: Últimos Posts
+Lista de posts:
+1. O que é Logística? → Botão “Leia Mais”
+2. Transporte e Distribuição Simplificados → Botão “Leia Mais”
+3. Sustentabilidade na Logística → Botão “Leia Mais”
+Formato: Blocos com imagem + título + resumo + botão
+
+Página: O que é Logística?
+---------------------------
+Título: O que é Logística?
+Texto:
+Logística é planejar, organizar e controlar o caminho que um produto percorre desde a origem até o cliente final. É garantir que a coisa certa chegue no lugar certo, na hora certa, na quantidade certa e na qualidade certa.
+Imagem/Vídeo: Infográfico ou animação explicativa
+Botão: Voltar para Home
+
+Página: Principais Processos Logísticos
+---------------------------------------
+[Título da página]: Principais Processos Logísticos
+
+[Bloco 1 – Suprimentos & Compras]
+Texto: Como as empresas adquirem e armazenam materiais de forma organizada.
+Imagem/Infográfico: Estoque ou compra de insumos
+
+[Bloco 2 – Armazenagem & Estoque]
+Texto: Controle de materiais e organização do espaço físico.
+Imagem/Infográfico: Prateleiras e organização de estoque
+
+[Bloco 3 – Transporte & Distribuição]
+Texto: Como os produtos chegam ao cliente final de forma eficiente.
+Imagem/Infográfico: Caminhões, mapas de rota, fluxogramas
+
+[Bloco 4 – Logística Reversa]
+Texto: Devoluções, trocas e reciclagem de maneira sustentável.
+Imagem/Infográfico: Fluxo de devolução ou reciclagem
+
+Página: Ferramentas & Tecnologias
+---------------------------------
+Título: Ferramentas e Tecnologias
+Texto: Softwares, automação e novas tecnologias que ajudam a tornar a logística mais eficiente.
+Imagem: Dashboard de WMS/TMS, drones, rastreadores
+Botão: Saiba Mais
+
+Página: Sustentabilidade
+------------------------
+Título: Sustentabilidade na Logística
+Texto: Práticas sustentáveis, transporte verde, redução de desperdício e embalagens ecológicas.
+Imagem/Infográfico: Gráficos de impacto ambiental
+
+Página: Blog / Notícias
+-----------------------
+Título: Notícias e Curiosidades
+Texto: Fique por dentro das novidades do setor logístico, tendências e curiosidades do mundo da logística.
+Formato: Lista de posts com miniaturas e resumo
+Botão: Leia Mais
+
+Página: Sobre Nós
+-----------------
+Título: Sobre o BeeWay
+Texto: Somos Luan, Denise e Matheus, o trio BeeWay. Nosso objetivo é tornar o aprendizado de logística simples, divertido e acessível para todos.
+Imagem: Fotos do grupo ou ilustração de abelhas trabalhando em equipe
+
+Página: Contato
+---------------
+Título: Fale Conosco
+Texto: Entre em contato conosco, envie dúvidas ou sugestões.
+Formulário: Nome, E-mail, Mensagem
+Botão: Enviar Mensagem
+Links: Redes sociais do grupo
+
+
+
+Faça um site moderno, e dinâmico, precisa estar em HTML, CSS E JAVASCRIPT e cada pagina dele, também precisa ter o arquivo .HTML para ficar simplificado para mim na edição,
