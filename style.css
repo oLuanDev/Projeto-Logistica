@@ -1,5 +1,10 @@
 /* Estilos Gerais */
 body {
+      width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* impede barra horizontal */
+
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -10,17 +15,20 @@ body {
 header {
     background-color: #ffd700; /* Amarelo da abelha */
     color: white;
-    padding: 1em 0;
+    padding: 0.5em 0;
+    padding-left: 40px;
 }
 
 nav {
     display: flex;                     /* h1 e ul na mesma linha */
     justify-content: space-between;    /* BeeWay à esquerda, menu à direita */
     align-items: center;               /* centraliza verticalmente */
-    padding: 0 20pxx;                   /* espaçamento interno */
+    padding: 0 pxx;                   /* espaçamento interno */
+    padding-right: 30px
+    
 }
 nav h1 {
-    margin-left: 20px; /* aumenta para mover mais para a direita */
+    margin-left: 0px; /* aumenta para mover mais para a direita */
 }
 
 nav ul {
@@ -303,53 +311,3 @@ section p {
 }
 
 
-header {
-    text-align: center;
-    margin: 40px 0;
-    position: relative;
-}
-
-.logo-animation {
-    position: relative;
-    display: inline-block;
-}
-
-/* Nome aparece primeiro */
-.text {
-    font-size: 3em;
-    font-weight: bold;
-    color: #007bff;
-    display: inline-block;
-    transition: opacity 1s;
-    animation: fadeOut 2s forwards 2s; /* some depois de 2s */
-}
-
-/* Caminhão escondido inicialmente */
-.truck {
-    width: 120px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) scale(0);
-    opacity: 0;
-    animation: truckAppear 1s forwards 2s, moveTruck 5s linear 3s forwards;
-}
-
-/* Faz o texto sumir */
-@keyframes fadeOut {
-    to { opacity: 0; }
-}
-
-/* Caminhão aparece */
-@keyframes truckAppear {
-    to {
-        transform: translateX(-50%) scale(1);
-        opacity: 1;
-    }
-}
-
-/* Caminhão andando para a direita */
-@keyframes moveTruck {
-    0% { left: 50%; }
-    100% { left: 100%; }
-}
