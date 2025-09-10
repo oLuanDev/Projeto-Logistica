@@ -30,35 +30,179 @@
 
 
     <main>
-        <section>
-            <h2>Principais Processos Logísticos</h2>
+       <section>
+  <h2>O que é Logística Integrada?</h2>
+  <p class="meu-paragrafo">
+    Logística integrada é a gestão unificada de todos os processos logísticos de uma empresa,
+    conectando compras, armazenamento, transporte, distribuição e logística reversa. 
+    O objetivo é otimizar recursos, reduzir custos, aumentar a eficiência operacional 
+    e garantir que produtos e serviços cheguem ao cliente de forma rápida, segura e sustentável.
+    Essa integração permite que cada etapa da cadeia logística funcione de maneira coordenada, 
+    evitando desperdícios e melhorando a experiência do cliente.
+  </p>
 
-            <div class="process-block">
-                <h3>Suprimentos & Compras</h3>
-                <p>Como as empresas adquirem e armazenam materiais de forma organizada.</p>
-                <img src="images/suprimentos.png" alt="Estoque ou compra de insumos">
+  <h2>Metodologias de Gestão</h2>
+  <div class="process-container">
+
+    <div class="process-block">
+      <h3>Kanban</h3>
+      <p>Entenda como as empresas adquirem e armazenam materiais de forma organizada.</p>
+      <img src="images/kanban.jpg" alt="Kanban" width="200" height="150">
+      <button class="popup-btn" 
+              data-question="O QUE É KANBAN?" 
+              data-text="O Kanban é uma metodologia de gestão visual de processos, originada no Japão na década de 1940, utilizada para organizar, controlar e otimizar o fluxo de trabalho em diversos tipos de operações. Seu principal objetivo é aumentar a eficiência, reduzir desperdícios e garantir que as tarefas sejam concluídas de forma ordenada e no tempo certo.">
+        Clique aqui
+      </button>
+    </div>
+
+    <div class="process-block">
+      <h3>Kaizen</h3>
+      <p>Entenda a filosofia japonesa de melhoria contínua.</p>
+      <img src="images/kaizen.jpg" alt="Kaizen" width="200" height="150">
+      <button class="popup-btn" 
+              data-question="O QUE É KAIZEN?" 
+              data-text="Kaizen é uma filosofia de gestão japonesa que busca melhoria contínua em todos os processos, produtos e serviços de uma organização, por meio de pequenas mudanças diárias. O objetivo é aumentar a eficiência, reduzir desperdícios e melhorar a qualidade, sem grandes investimentos.">
+        Clique aqui
+      </button>
+    </div>
+
+    <div class="process-block">
+      <h3>5S</h3>
+      <p>Entenda o método japonês de organização e padronização.</p>
+      <img src="images/transporte.jpg" alt="5S" width="200" height="150">
+      <button class="popup-btn" 
+              data-question="O QUE É 5S?" 
+              data-text="O 5S é uma metodologia de gestão da qualidade originada no Japão, voltada para organização, limpeza e padronização do ambiente de trabalho, com o objetivo de aumentar a eficiência, reduzir desperdícios e melhorar a segurança. O nome “5S” vem das iniciais de cinco palavras japonesas que representam cada etapa do processo.">
+        Clique aqui
+      </button>
+    </div>
+
+    <div class="process-block">
+      <h3>Just in Time</h3>
+      <p>Entenda o sistema de produção sob demanda.</p>
+      <img src="images/justintime.jpg" alt="Just in Time" width="200" height="150">
+      <button class="popup-btn" 
+              data-question="O QUE É JUST IN TIME?" 
+              data-text="O Just in Time (JIT) é uma metodologia de gestão de produção e logística que busca produzir e entregar produtos exatamente no momento em que são necessários, nem antes, nem depois. Originado no Japão, principalmente na Toyota, o JIT tem como objetivo reduzir desperdícios, minimizar estoques e aumentar a eficiência do processo produtivo.">
+        Clique aqui
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Popup Único -->
+  <div id="popup" class="popup" style="display:none;">
+    <div class="popup-content">
+      <span class="close" id="close-popup">&times;</span>
+      <strong id="popup-question"></strong>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+
+           
+</section>
+
+<script>
+  const btns = document.querySelectorAll('.popup-btn');
+  const popup = document.getElementById('popup');
+  const closeBtn = document.getElementById('close-popup');
+  const popupQuestion = document.getElementById('popup-question');
+  const popupText = document.getElementById('popup-text');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      popupQuestion.textContent = btn.getAttribute('data-question');
+      popupText.textContent = btn.getAttribute('data-text');
+      popup.style.display = 'block';
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
+</script>
+
+          <!-- Botão -->
+            <div class="voltar-btn11">
+            <button  onclick="location.href='o-que-e-logistica.html'">Voltar para Home</button>
+            <button onclick="location.href='ferramentas-tecnologias.html'">Próxima Pagina</button>
             </div>
+             
+                   
+<style>
 
-            <div class="process-block">
-                <h3>Armazenagem & Estoque</h3>
-                <p>Controle de materiais e organização do espaço físico.</p>
-                <img src="images/armazenagem.png" alt="Prateleiras e organização de estoque">
-            </div>
+.voltar-btn11 {
+  display: center;
+  gap: 20px;     /* espaço entre os botões */
+  margin: 0px auto 0;
+  padding: 12px 1px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+  }
+.process-container {
+  display: flex;          /* organiza os blocos lado a lado */
+  flex-wrap: wrap;        /* permite quebrar linha se a tela for pequena */
+  gap: 80px;              /* espaço entre os blocos */
+  justify-content: center; /* centraliza horizontalmente */
+}
 
-            <div class="process-block">
-                <h3>Transporte & Distribuição</h3>
-                <p>Como os produtos chegam ao cliente final de forma eficiente.</p>
-                <img src="images/transporte.png" alt="Caminhões, mapas de rota, fluxogramas">
-            </div>
+.popup-content p {
+    font-size: 18px; /* antes era 16px, aumentei para 18px */
+    line-height: 1.6; /* espaçamento maior entre linhas facilita a leitura */
+}
 
-            <div class="process-block">
-                <h3>Logística Reversa</h3>
-                <p>Devoluções, trocas e reciclagem de maneira sustentável.</p>
-                <img src="images/logistica_reversa.png" alt="Fluxo de devolução ou reciclagem">
-            </div>
+.process-block {
+  flex: 0 0 220px;        /* largura fixa para cada bloco */
+  background: #f4f4f4;    /* cor de fundo opcional */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
 
-            <button onclick="location.href=\'index.html\'">Voltar para Home</button>
-        </section>
+.voltar-btn {
+   font-weight: bold;
+    display: block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(39, 39, 39);
+   margin: 20px auto 0;
+  cursor: pointer;
+  background: linear-gradient(90deg, #FFB400, #fbff00);
+  background-size: 200% auto;
+}
+
+.btn-beeway:hover {
+  background-position: right center; /* move o gradiente */
+  transform: translateY(-2px);
+}
+
+
+.meu-paragrafo {
+  width: 1200px;         /* define a largura do parágrafo */
+  max-width: 90%;       /* responsivo em telas menores */
+  line-height: 1.8;     /* aumenta o espaçamento entre linhas */
+  text-align: justify;   /* deixa o texto “quadrado”, alinhado dos dois lados */
+  margin: 0 auto;       /* centraliza o parágrafo */
+}
+
+
+</style>
+
+
+
+
+
     </main>
 
     <footer>
@@ -66,7 +210,43 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+const popup = document.getElementById('popup');
+const popupTitle = document.getElementById('popup-title');
+const popupText = document.getElementById('popup-text');
+const closeBtn = document.getElementById('close-popup');
 
+// Seleciona todas as imagens e botões
+const triggers = document.querySelectorAll('.popup-img, .popup-btn');
+
+// Abre pop-up ao clicar
+triggers.forEach(el => {
+    el.addEventListener('click', () => {
+        popupTitle.innerText = el.dataset.title;
+        popupText.innerText = el.dataset.text;
+        popup.style.display = 'block';
+    });
+});
+
+// Fecha pop-up
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+    if (e.target == popup) {
+        popup.style.display = 'none';
+    }
+
+});
+
+// Fecha ao apertar ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {  // verifica se a tecla pressionada é ESC
+        popup.style.display = 'none';
+    }
+});
+    </script>
 
 
 </body>

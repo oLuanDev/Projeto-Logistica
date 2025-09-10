@@ -30,12 +30,78 @@
     <main>
 
     <main>
-        <section>
-            <h2>O que é Logística?</h2>
-            <p>Logística é planejar, organizar e controlar o caminho que um produto percorre desde a origem até o cliente final. É garantir que a coisa certa chegue no lugar certo, na hora certa, na quantidade certa e na qualidade certa.</p>
-            <img src="images/logistica_explicativa.png" alt="Infográfico ou animação explicativa sobre logística">
-            <button onclick="location.href=\'index.html\'">Voltar para Home</button>
-        </section>
+       <section class="logistica-section">
+  <h2>O que é Logística?</h2>
+  
+  <div class="content-container">
+    <p font-size:25px;>
+      A logística é uma área fundamental para o funcionamento das empresas e da sociedade como um todo. Ela pode ser definida como o processo de planejar, implementar e controlar, de forma eficiente, o fluxo e a armazenagem de produtos, serviços e informações, desde o ponto de origem até o consumidor final. Esse conjunto de atividades busca garantir que os bens cheguem ao destino certo, no prazo adequado, em perfeitas condições e com o menor custo possível.
+Dentro da logística estão incluídas várias etapas importantes,
+como o transporte, a armazenagem, a gestão de estoques, a distribuição, o controle de suprimentos, o processamento de pedidos e até mesmo a logística reversa, que cuida do retorno de produtos para troca, devolução ou reciclagem. Todas essas etapas precisam estar integradas para que a empresa consiga operar de forma competitiva e eficiente.
+A importância da logística vai além da entrega de mercadorias. Ela é responsável por otimizar recursos, reduzir desperdícios, melhorar os processos internos e aumentar a satisfação do cliente. Quando bem aplicada, contribui para a sustentabilidade, pois reduz o impacto ambiental com rotas mais inteligentes, melhor aproveitamento de cargas e menor consumo de combustível.
+No mercado atual, em que os consumidores buscam rapidez e qualidade no atendimento, a logística se tornou um diferencial estratégico. Empresas que conseguem entregar mais rápido, com custos menores e mantendo a qualidade, saem na frente da concorrência. Por isso, a logística não é apenas um setor de apoio, mas sim uma área estratégica que conecta fornecedores, empresas e clientes em uma grande rede de valor.
+    </p>
+
+    <img src="images/logistica_explicativa.jpg" alt="Infográfico ou animação explicativa sobre logística">
+  </div>
+  <div class="voltar-btn">
+  <button  onclick="location.href='index.html'">Voltar para Home</button>
+    <button onclick="location.href='principais-processos.html'">Próxima Pagina</button>
+  </div>
+  </section>
+
+<style>
+.logistica-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.content-container {
+  text-align: left;
+  display: flex;
+  gap: 50px; /* espaço entre texto e imagem */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+}
+
+.content-container p {
+  flex: 1 1 800px; /* largura mínima do texto, ajustável */
+  max-width: 700px; 
+  line-height: 2; /* aumenta espaço entre linhas */
+}
+
+.content-container img {
+  flex: 1 1 300px; /* largura mínima da imagem */
+  max-width: 380px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Botão centralizado */
+.voltar-btn {
+  display: flex;
+  gap: 10px;     /* espaço entre os botões */
+  margin: 20px auto 0;
+  padding: 12px 1px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+}
+h2 {
+  font-size: 36px;  /* tamanho maior, ajuste como quiser */
+  text-align: left; /* centraliza o título */
+  margin-bottom: px; /* espaço abaixo do título */
+}
+</style>
+
     </main>
 
     <footer>

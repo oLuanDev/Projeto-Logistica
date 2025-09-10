@@ -20,10 +20,3 @@ menuToggle.addEventListener('click', () => {
 
 const menu = document.getElementById('menu');
 const menuToggle = document.getElementById('menu-toggle');
-
-// Garante que o menu esteja fechado quando a página é carregada ou restaurada do cache
-window.addEventListener('pageshow', () => {
-  menu.classList.remove('active');
-  menuToggle.classList.remove('active');
-});
-
