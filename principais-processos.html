@@ -19,7 +19,7 @@
             <li><a href="index.html">Início</a></li>
             <li><a href="o-que-e-logistica.html">O que é Logística?</a></li>
             <li><a href="principais-processos.html">Logística Integrada</a></li>
-            <li><a href="ferramentas-tecnologias.html">Ferramentas & Tecnologias</a></li>
+            <li><a href="cadeiadesuprimentos.html">Cadeia de Suprimentos</a></li>
             <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="sobre-nos.html">Sobre Nós</a></li>
@@ -102,36 +102,10 @@
            
 </section>
 
-<script>
-  const btns = document.querySelectorAll('.popup-btn');
-  const popup = document.getElementById('popup');
-  const closeBtn = document.getElementById('close-popup');
-  const popupQuestion = document.getElementById('popup-question');
-  const popupText = document.getElementById('popup-text');
-
-  btns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      popupQuestion.textContent = btn.getAttribute('data-question');
-      popupText.textContent = btn.getAttribute('data-text');
-      popup.style.display = 'block';
-    });
-  });
-
-  closeBtn.addEventListener('click', () => {
-    popup.style.display = 'none';
-  });
-
-  window.addEventListener('click', (e) => {
-    if (e.target === popup) {
-      popup.style.display = 'none';
-    }
-  });
-</script>
-
           <!-- Botão -->
             <div class="voltar-btn11">
             <button  onclick="location.href='o-que-e-logistica.html'">Voltar para Home</button>
-            <button onclick="location.href='ferramentas-tecnologias.html'">Próxima Pagina</button>
+            <button onclick="location.href='cadeiadesuprimentos.html'">Próxima Pagina</button>
             </div>
              
                    

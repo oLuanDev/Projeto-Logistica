@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadeia de Suprimentos - Entenda o fluxo completo desde o planejamento até a logística reversa">
+    <title>Cadeia de Suprimentos - Fluxo Completo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <nav class="navbar">
+        <div class="logo">BeeWay 🐝</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="o-que-e-logistica.html">O que é Logística?</a></li>
+            <li><a href="principais-processos.html">Logística Integrada</a></li>
+            <li><a href="cadeiadesuprimentos.html">Cadeia de Suprimentos</a></li>
+            <li><a href="sustentabilidade.html">Sustentabilidade</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+/* Navbar */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 184, 0, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #2c3e50;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* centraliza os links horizontalmente */
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+/* Menu toggle - mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #2c3e50;
+    border-radius: 2px;
+}
+
+/* Responsivo */
+@media (max-width: 968px) {
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(255, 184, 0, 0.95);
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        display: none;
+        text-align: center; /* centraliza o texto no mobile */
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+</style>
+
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #d4c21c 0%, #b46a08 100%);
+            color: #fff;
+            line-height: 1.8;
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, #f8991e 0%, #d88c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro {
+            max-width: 1800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 184, 0, 0.3);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .flow-container {
+            position: relative;
+            margin-top: 80px;
+        }
+
+        .flow-path {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 100%;
+            background: linear-gradient(180deg, 
+                #FF6B1A 0%, 
+                #FFB800 20%,
+                #FF6B1A 40%,
+                #FFB800 60%,
+                #FF6B1A 80%,
+                #FFB800 100%
+            );
+            border-radius: 3px;
+            opacity: 0.6;
+            z-index: 0;
+        }
+
+        .flow-step {
+            position: relative;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            z-index: 1;
+        }
+
+        .flow-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FF6B1A 0%, #FFB800 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: white;
+            box-shadow: 0 10px 30px rgba(255, 107, 26, 0.4);
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            z-index: 2;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .flow-step:nth-child(2) .step-number {
+            animation-delay: 0.5s;
+        }
+
+        .flow-step:nth-child(3) .step-number {
+            animation-delay: 1s;
+        }
+
+        .flow-step:nth-child(4) .step-number {
+            animation-delay: 1.5s;
+        }
+
+        .flow-step:nth-child(5) .step-number {
+            animation-delay: 2s;
+        }
+
+        .flow-step:nth-child(6) .step-number {
+            animation-delay: 2.5s;
+        }
+
+        .step-content {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            color: #2c3e50;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            max-height: 120px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .step-content:hover {
+            max-height: 400px;
+            transform: scale(1.02);
+            box-shadow: 0 15px 50px rgba(255, 107, 26, 0.4);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .step-icon {
+            font-size: 2.5rem;
+            filter: grayscale(0);
+        }
+
+        .step-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #FF6B1A;
+            margin: 0;
+        }
+
+        .step-summary {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .step-details {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.7;
+            padding-top: 15px;
+            border-top: 2px solid #FFB800;
+            opacity: 0.9;
+        }
+
+        .hover-hint {
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.85rem;
+            color: #FF6B1A;
+            font-weight: 600;
+            opacity: 0.7;
+        }
+
+        .step-content:hover .hover-hint {
+            opacity: 0;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Responsivo */
+        @media (max-width: 968px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .intro {
+                font-size: 1.1rem;
+                padding: 25px;
+            }
+
+            .flow-step {
+                flex-direction: column !important;
+                gap: 20px;
+            }
+
+            .step-number {
+                width: 70px;
+                height: 70px;
+                font-size: 1.8rem;
+            }
+
+            .flow-path {
+                left: 35px;
+                transform: none;
+            }
+
+            .step-content {
+                max-height: 100px;
+            }
+
+            .step-content:hover {
+                max-height: 450px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .intro {
+                font-size: 1rem;
+                padding: 20px;
+            }
+
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .step-icon {
+                font-size: 2rem;
+            }
+
+            .step-title {
+                font-size: 1.3rem;
+            }
+
+            .step-content {
+                padding: 20px;
+            }
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🔗 Cadeia de Suprimentos</h1>
+            <div class="intro">
+                <p>
+                    A <strong>Cadeia de Suprimentos</strong> (Supply Chain) é a rede integrada de processos, pessoas, 
+                    organizações e recursos que transformam matérias-primas em produtos finais entregues ao consumidor. 
+                    Compreende todas as etapas desde o <strong>planejamento estratégico</strong> até a 
+                    <strong>logística reversa</strong>, garantindo eficiência, redução de custos e satisfação do cliente. 
+                    Passe o mouse sobre cada etapa para explorar os detalhes!
+                </p>
+            </div>
+        </header>
+
+        <div class="flow-container">
+            <div class="flow-path"></div>
+
+            <!-- Etapa 1 -->
+            <div class="flow-step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <div class="step-icon">📊</div>
+                        <h3 class="step-title">Planejamento</h3>
+                    </div>
+                    <p class="step-summary">
+                        Estratégia e coordenação de toda a cadeia de suprimentos.
+                    </p>
+                    <div class="step-details">
+                        Fase estratégica onde são definidas metas, previsões de demanda, alocação de recursos 
+                        e estratégias de suprimento. Envolve análise de dados históricos, tendências de mercado 
+                        e planejamento de capacidade para otimizar custos e garantir disponibilidade de produtos. 
+                        Utiliza ferramentas de S&OP (Sales and Operations Planning) para alinhar todas as áreas.
+                    </div>
+                    <span class="hover-hint">↓ Clique ou passe o mouse</span>
+                </div>
+            </div>
+
+            <!-- Etapa 2 -->
+            <div class="flow-step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <div class="step-icon">🤝</div>
+                        <h3 class="step-title">Fornecimento</h3>
+                    </div>
+                    <p class="step-summary">
+                        Aquisição de matérias-primas e insumos necessários.
+                    </p>
+                    <div class="step-details">
+                        Processo de seleção e gestão de fornecedores, negociação de contratos e aquisição de 
+                        materiais. Inclui avaliação de qualidade, confiabilidade, preços e prazos de entrega. 
+                        Desenvolvimento de parcerias estratégicas com fornecedores para garantir continuidade 
+                        e qualidade da cadeia. Implementação de sistemas de rastreabilidade e compliance.
+                    </div>
+                    <span class="hover-hint">↓ Clique ou passe o mouse</span>
+                </div>
+            </div>
+
+            <!-- Etapa 3 -->
+            <div class="flow-step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <div class="step-icon">🏭</div>
+                        <h3 class="step-title">Produção</h3>
+                    </div>
+                    <p class="step-summary">
+                        Transformação de matérias-primas em produtos acabados.
+                    </p>
+                    <div class="step-details">
+                        Etapa de manufatura onde ocorre a transformação física dos materiais em produtos finais. 
+                        Envolve gestão de processos produtivos, controle de qualidade, manutenção de equipamentos 
+                        e otimização da capacidade produtiva. Utilização de metodologias Lean Manufacturing e 
+                        Six Sigma para reduzir desperdícios e aumentar eficiência.
+                    </div>
+                    <span class="hover-hint">↓ Clique ou passe o mouse</span>
+                </div>
+            </div>
+
+            <!-- Etapa 4 -->
+            <div class="flow-step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <div class="step-icon">📦</div>
+                        <h3 class="step-title">Armazenagem</h3>
+                    </div>
+                    <p class="step-summary">
+                        Gestão de estoques e armazenamento estratégico.
+                    </p>
+                    <div class="step-details">
+                        Administração de centros de distribuição e armazéns, incluindo recebimento, 
+                        movimentação interna, controle de inventário e expedição. Implementação de sistemas 
+                        WMS (Warehouse Management System) para otimizar espaço, reduzir tempos de picking e 
+                        garantir acuracidade de estoque. Controle de temperatura e condições especiais quando necessário.
+                    </div>
+                    <span class="hover-hint">↓ Clique ou passe o mouse</span>
+                </div>
+            </div>
+
+            <!-- Etapa 5 -->
+            <div class="flow-step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <div class="step-icon">🚚</div>
+                        <h3 class="step-title">Distribuição</h3>
+                    </div>
+                    <p class="step-summary">
+                        Entrega de produtos ao destino final de forma eficiente.
+                    </p>
+                    <div class="step-details">
+                        Gestão do transporte e entrega de produtos aos clientes finais ou pontos de venda. 
+                        Envolve planejamento de rotas, gestão de frotas, rastreamento de entregas e otimização 
+                        de custos logísticos. Utilização de tecnologias de roteirização e telemetria para 
+                        aumentar eficiência. Coordenação com transportadoras e gestão de prazos de entrega.
+                    </div>
+                    <span class="hover-hint">↓ Clique ou passe o mouse</span>
+                </div>
+            </div>
+
+            <!-- Etapa 6 -->
+            <div class="flow-step">
+                <div class="step-number">6</div>
+                <div class="step-content">
+                    <div class="step-header">
+                        <div class="step-icon">♻️</div>
+                        <h3 class="step-title">Logística Reversa</h3>
+                    </div>
+                    <p class="step-summary">
+                        Gestão de devoluções, reciclagem e sustentabilidade.
+                    </p>
+                    <div class="step-details">
+                        Processo de retorno de produtos, embalagens ou materiais do consumidor para o fabricante. 
+                        Inclui gestão de devoluções, reparos, reciclagem e descarte adequado. Fundamental para 
+                        sustentabilidade, redução de impacto ambiental e compliance com regulamentações. 
+                        Oportunidade de recuperação de valor e melhoria da experiência do cliente.
+                    </div>
+                    <span class="hover-hint">↓ Clique ou passe o mouse</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão -->
+            <div class="voltar-btn11">
+            <button  onclick="location.href='o-que-e-logistica.html'">Voltar para Home</button>
+            <button onclick="location.href='compras.html'">Próxima Pagina</button>
+            </div>
+
+
+</body>
+</html>
+
